@@ -4,7 +4,7 @@ export default function RollingBar(content = {}) {
     }
 
     if(!content.text) {
-        content.text = '데이터가 로딩에 오류가 발생했습니다.'
+        content.text = '데이터 로딩 중 오류가 발생했습니다.'
     }
     
     return `

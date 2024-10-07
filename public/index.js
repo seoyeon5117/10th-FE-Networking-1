@@ -1,4 +1,4 @@
-import { CategoryBar } from "../src/components/CategoryBar/CategoryBar.js";
+import CategoryBar from "../src/components/CategoryBar/CategoryBar.js";
 
 const index = document.getElementById('index');
 

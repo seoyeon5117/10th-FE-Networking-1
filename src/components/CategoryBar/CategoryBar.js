@@ -1,4 +1,4 @@
-export function CategoryBar() {
+export default function CategoryBar() {
     const category = [
         '종합/경제',
         '방송/통신',
@@ -36,10 +36,9 @@ export function CategoryBar() {
 
     function handleClick(event) {
         // 모든 selected class 제거
-        const categoryElements = document.querySelectorAll('.selected');
-        categoryElements.forEach((element) => {
-            element.classList.remove('selected');
-        });
+        const categoryElements = document.querySelectorAll('.categoryWrapper'); // 전체 카테고리 요소를 가져옴
+        categoryElements[selectedCategoryIndex].classList.remove('selected'); // 이전에 선택된 카테고리 인덱스를 이용해 selected class 제거
+        console.log(categoryElements);
 
         const clickedWrapper = event.target.closest('.categoryWrapper')
         clickedWrapper.classList.add('selected'); // 선택한 categoryWrapper의 class에 selected를 추가

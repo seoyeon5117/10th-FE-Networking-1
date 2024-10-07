@@ -5,8 +5,8 @@
     height: 40px;
     padding: 16px 0px;
     align-items: center;
-    border: 1px solid var(--border-border-default, #D2DAE0);
-    background: var(--surface-surface-alt, #F5F7F9);
+    border: 1px solid #D2DAE0;
+    background-color: #F5F7F9;
 }
 
 .categoryWrapper {

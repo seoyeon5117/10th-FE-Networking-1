@@ -49,18 +49,21 @@ export function CategoryBar() {
         updateMediaCount(clickedWrapper);
     };
 
-    // 언론사 수 업데이트
+    /**
+     * 언론사 수 업데이트
+     * @param {Node} clickedWrapper 선택된 카테고리 가져와서 해당 카테고리의 언론사 수를 가져오기 위해
+     */
     function updateMediaCount(clickedWrapper) {
         currentMediaNum = 1; // 첫번째 언론사로 초기화
 
-        const mediaCount = document.querySelectorAll('.mediaCount');
-        const clickedMediaCount = clickedWrapper.querySelector('.mediaCount');
+        const mediaCount = document.querySelectorAll('.mediaCount'); 
+        const clickedMediaCount = clickedWrapper.querySelector('.mediaCount'); // 선택한 언론
 
         mediaCount.forEach((element) => {
             if(element === clickedMediaCount) {
                 clickedMediaCount.innerHTML = `${currentMediaNum}<span class="totalMediaCount">/${mediaNum[selectedCategoryIndex]}</span>`;
             } else {
-                element.innerHTML = ''; // 나머지 카테고리의 언론사 수 초기화
+                element.innerHTML = ''; // 나머지 카테고리의 언론사 수 제거
             }
         })
     };

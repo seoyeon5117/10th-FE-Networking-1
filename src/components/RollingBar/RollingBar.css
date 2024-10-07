@@ -1,0 +1,27 @@
+.rollingBar {
+    display: flex;
+    box-sizing: border-box;
+    padding: 16px;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    gap: 16px;
+    border: 1px solid #D2DAE0;
+    background-color: #F5F7F9;
+
+    
+    font-family: "Pretendard Variable";
+    font-size: 14px;
+    font-style: normal;
+}
+
+.rollingBarMedia {
+    display: flex;
+    color: #14212B;
+    font-weight: 700;
+}
+
+.rollingBarContent {
+    color: #5F6E76;
+    font-weight: 500;
+}

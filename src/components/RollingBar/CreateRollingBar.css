@@ -1,0 +1,7 @@
+.rollingBarWrapper {
+    display: flex;
+    width: 930px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    gap: 8px;
+}

@@ -1,5 +1,7 @@
 @import url(../src/components/CategoryBar/CategoryBar.css);
 @import url(../src/components/Header/Header.css);
+@import url(../src/components/RollingBar/RollingBar.css);
+@import url(../src/components/RollingBar/CreateRollingBar.css);
 
 body {
     box-sizing: border-box;

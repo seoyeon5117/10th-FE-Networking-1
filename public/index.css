@@ -10,3 +10,15 @@ body {
     height: auto;
     margin: 0;
 }
+
+#header {
+    margin: 58px 175px 40px 175px;
+}
+
+#rollingBar {
+    margin: 40px 175px 34.5px 175px;
+}
+
+#categoryBar {
+    margin: 26.5px 175px 0px 175px;
+}

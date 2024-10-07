@@ -76,6 +76,6 @@ export default function CategoryBar() {
     })
 
     return `
-        <nav class="categoryBar">${categories}</nav>
+        <div class="categoryBar">${categories}</div>
     `
 }

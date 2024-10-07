@@ -1,7 +1,5 @@
 import CategoryBar from "../src/components/CategoryBar/CategoryBar.js";
 
-const index = document.getElementById('index');
+const categoryBar = document.getElementById('categoryBar');
 
-index.innerHTML = `
-    ${CategoryBar()}
-`
+categoryBar.innerHTML = CategoryBar();

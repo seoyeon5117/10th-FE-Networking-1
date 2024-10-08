@@ -1,5 +1,6 @@
 @import url(../src/components/CategoryBar/CategoryBar.css);
 @import url(../src/components/Header/Header.css);
+@import url(../src/components/MediaTab/MediaTab.css);
 @import url(../src/components/RollingBar/RollingBar.css);
 @import url(../src/components/RollingBar/CreateRollingBar.css);
 
@@ -19,6 +20,14 @@ body {
     margin: 40px 175px 34.5px 175px;
 }
 
-#categoryBar {
+#mediaTab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 34.5px 175px 26.5px 175px;
+}
+
+#tabContent {
     margin: 26.5px 175px 0px 175px;
 }

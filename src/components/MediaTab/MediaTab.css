@@ -1,0 +1,32 @@
+.mediaTabWrapper {
+    display: flex;
+}
+
+.mediaTab {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.tab {
+    display: flex;
+    color: #879298;
+    font-family: "Pretendard Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.selectedTab {
+    color: #14212B;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.selectView {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}

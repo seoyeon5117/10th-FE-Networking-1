@@ -1,24 +1,4 @@
-export default function CategoryBar() {
-    const category = [
-        '종합/경제',
-        '방송/통신',
-        'IT',
-        '영자지',
-        '스포츠/연예',
-        '매거진/전문지',
-        '지역'
-    ];
-
-    // 언론사 수 (임시값)
-    const mediaNum = [
-        '10',
-        '20',
-        '30',
-        '40',
-        '50',
-        '60',
-        '70',
-    ]
+export default function CategoryBar(category, mediaNum) {
 
     let selectedCategoryIndex = 0;
     let currentMediaNum = 1;

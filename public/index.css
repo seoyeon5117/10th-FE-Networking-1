@@ -4,6 +4,10 @@
 @import url(../src/components/RollingBar/RollingBar.css);
 @import url(../src/components/RollingBar/CreateRollingBar.css);
 @import url(../src/assets/fonts/pretendardVariable.css);
+@import url(../src/components/AllMedia/NewsList/NewsList.css);
+@import url(../src/components/AllMedia/GridView/GridView.css);
+@import url(../src/components/SubscribedMedia/NewsList/NewsList.css);
+@import url(../src/components/SubscribedMedia/GridView/GridView.css);
 
 body {
     box-sizing: border-box;

@@ -1,18 +1,49 @@
 .rollingBar {
+    position: relative;
     display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     padding: 16px;
     width: 100%;
     height: auto;
     align-items: flex-start;
-    gap: 16px;
     border: 1px solid #D2DAE0;
     background-color: #F5F7F9;
 
-    
-    font-family: "Pretendard Variable";
     font-size: 14px;
-    font-style: normal;
+}
+
+.rollingBarText {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 17px;
+    overflow: hidden;
+}
+
+.rollingBarList {
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    gap: 16px;
+    visibility: hidden;
+}
+
+.prev {
+    visibility: visible;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+}
+
+.current {
+    visibility: visible;
+    transform: translateY(0%);
+    transition: transform 0.5s ease;
+}
+
+.next {
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
 }
 
 .rollingBarMedia {

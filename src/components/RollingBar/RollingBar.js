@@ -1,16 +1,28 @@
-export default function RollingBar(content = {}) {
-    if(!content.name) {
-        content.name = '오류'
+export default function RollingBar(content = {}, index, headlineNum) {
+    let list = [];
+
+    for(let i = index ; i < index+5 ; i++){
+        if(!content[i].officeName) {
+            content[i].officeName = '오류'
+        }
+
+        if(!content[i].title) {
+            content[i].title = '데이터 로딩 중 오류가 발생했습니다.'
+        }
+        
+        list.push(`
+            <div id=${content[i]._id} class="rollingBarList rolling-${i}">
+                <div class="rollingBarMedia">${content[i].officeName}</div>
+                <div class="rollingBarContent">${content[i].title}</div>
+            </div>
+        `);
     }
 
-    if(!content.text) {
-        content.text = '데이터 로딩 중 오류가 발생했습니다.'
-    }
-    
     return `
-        <div class="rollingBar">
-            <div class="rollingBarMedia">${content.name}</div>
-            <div class="rollingBarContent">${content.text}</div>
+        <div id="rollingBarId" class="rollingBar">
+            <div class="rollingBarText">
+                ${list.join('')}
+            </div>
         </div>
     `
 }

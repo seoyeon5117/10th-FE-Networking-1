@@ -15,7 +15,6 @@ export default function CreateRollingBar() {
         })
         
         document.querySelectorAll('.rollingBar').forEach((element, index) => {
-            console.log(element);
             const items = element.querySelectorAll('.rollingBarList');
             index = index * HeadlineNum;
             updateClasses(items, index);
@@ -30,7 +29,7 @@ export default function CreateRollingBar() {
 
 export function initialRollingBar() {
     const rollingBar1 = RollingBar(data, 0, HeadlineNum);
-    const rollingBar2 = RollingBar(data, HeadlineNum*1, HeadlineNum);
+    const rollingBar2 = RollingBar(data, 5, HeadlineNum);
 
     return `
         <div class="rollingBarWrapper">
@@ -45,7 +44,7 @@ export function updateClasses(items, index) {
         item.classList.remove('prev', 'current', 'next');
         if (i === (index - 1 + HeadlineNum) % HeadlineNum) {
             item.classList.add('prev');
-        } else if (i === index) {
+        } else if (i === index % HeadlineNum) {
             item.classList.add('current');
         } else if (i === (index + 1) % HeadlineNum) {
             item.classList.add('next');

@@ -1,7 +1,7 @@
 export default function RollingBar(content = {}, index, headlineNum) {
     let list = [];
 
-    for(let i = index ; i < index+5 ; i++){
+    for(let i = index ; i < index+headlineNum ; i++){
         if(!content[i].officeName) {
             content[i].officeName = '오류'
         }
